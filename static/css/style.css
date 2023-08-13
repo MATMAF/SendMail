@@ -26,6 +26,11 @@ pre {
     text-decoration: underline;
 }
 
+h2:hover pre {
+    transition: 1.5s;
+    color: #5B9A8B;
+}
+
 h3 {
     color: #FFFFFF;
     font-size: 25px;
