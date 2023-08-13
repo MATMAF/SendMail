@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>SendMail</title>
+</head>
+<body>
+    <h1>SendMail</h1>
+    <h2><pre>Free</pre> email API</h2>
+    <h3>How to use it ?</h3>
+    <h4>Base URL</h4>
+    <div>https://mail.mat.run/api</div>
+    <h4>Parameters</h4>
+    <div>?name - <p>Name of email sender</p></div>
+    <div>&receiver - <p>Email receiver</p></div>
+    <div>&sub - <p>Email subject</p></div>
+    <div>&message - <p>Email message</p></div>
+    <h4>Example</h4>
+    <div>https://mail.mat.run/api?name=MAT.RUN&receiver=hi@mat.run&sub=hi&message=Hello%20World!</div>
+    <footer>Powered by <a href="https://github.com/MATMAF" target="_blank">@MATMAF</a></footer>
+</body>
+</html>
