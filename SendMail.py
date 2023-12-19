@@ -31,5 +31,5 @@ def api():
     SendMail(sender_name, receiver_email, subject, message)
     return "Sent"
 
-if __name__ == "__main__":
-    app.run()
+if __name__ == '__main__':
+    app.run(host="0.0.0.0")
