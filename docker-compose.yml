@@ -1,0 +1,8 @@
+services:
+  SendMail:
+    image: mathieumafille/sendmail:latest
+    environment:
+      - SERVER="mail.example.com"
+      - PORT=587
+      - SENDER="email@example.com"
+      - PASSWORD="ExamPle"
