@@ -1,6 +1,9 @@
 services:
   SendMail:
     image: mathieumafille/sendmail:latest
+    ports:
+      - 5000:5000
+    restart: always
     environment:
       - SERVER="mail.example.com"
       - PORT=587
