@@ -1,11 +1,12 @@
 services:
   SendMail:
+    container_name: SendMail
     image: mathieumafille/sendmail:latest
     ports:
       - 5000:5000
     restart: always
     environment:
-      - SERVER="mail.example.com"
+      - SERVER=mail.example.com
       - PORT=587
-      - SENDER="email@example.com"
-      - PASSWORD="ExamPle"
+      - SENDER=email@example.com
+      - PASSWORD=ExamPle
