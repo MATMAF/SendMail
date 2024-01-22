@@ -1,11 +1,9 @@
 from flask import Flask, request, render_template
-from flask_sslify import SSLify
 import smtplib
 from email.mime.text import MIMEText
 import config
 
 app = Flask(__name__)
-sslify = SSLify(app)
 
 def SendMail(sender_name, receiver_email, subject, message):
     server = smtplib.SMTP(config.SERVER, config.PORT)
