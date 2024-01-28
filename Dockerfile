@@ -1,4 +1,4 @@
-FROM python:3.12.1-slim
+FROM python:slim
 
 EXPOSE 5000
 
@@ -6,6 +6,6 @@ WORKDIR /app
 
 COPY . /app/
 
-RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 CMD ["python", "SendMail.py"]
